@@ -1,0 +1,19 @@
+import React from 'react';
+
+const StudentListItem = ({ student, onToggleAttendance }) => {
+  return (
+    <div className="student-list-item">
+      <p>{student.name}</p>
+      <label className="attendance-toggle">
+        <input
+          type="checkbox"
+          checked={student.attendance}
+          onChange={() => onToggleAttendance(student.id)}
+        />
+        Mark Attendance
+      </label>
+    </div>
+  );
+};
+
+export default StudentListItem;
