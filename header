@@ -1,0 +1,12 @@
+import React from 'react';
+
+const Header = ({ className, date }) => {
+  return (
+    <div className="header">
+      <h1>{className}</h1>
+      <p>{date}</p>
+    </div>
+  );
+};
+
+export default Header;
