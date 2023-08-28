@@ -1,0 +1,15 @@
+import React from 'react';
+
+const MarkedAttendanceDisplay = ({ markedAttendance }) => {
+  return (
+    <div className="marked-attendance">
+      <h2>Marked Attendance</h2>
+      <ul>
+        {markedAttendance.map((student) => (
+          <li key={student.id}>{student.name} - {student.timestamp}</li>
+        ))}
+      </ul>
+    </div>
+  
+
+export default MarkedAttendanceDisplay;
